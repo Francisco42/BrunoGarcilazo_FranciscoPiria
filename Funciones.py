@@ -36,12 +36,12 @@ def ModoComando():				#Modo Comando definido como funcion para no repetirlo cons
 	print("\n")
 
 # Unicamente letras, no muta números o símbolos
-def funcion1(a):     #Transforma todas las letras del parámetro en mayúsculas
+def Mayusculas(a):     #Transforma todas las letras del parámetro en mayúsculas
 	a = a.upper()
 	return a
 
 # Si la primera es un número o símbolo, no se muta lo ingresado.
-def funcion2(a):			#Tranforma la primera letra de cada palabra del parametro en mayúscula
+def PrimeraMayus(a):			#Tranforma la primera letra de cada palabra del parametro en mayúscula
 	b =""
 	a = a.split(" ")
 	for palabra in a:  				#Este for recorre todas las palabras
@@ -55,20 +55,20 @@ def funcion2(a):			#Tranforma la primera letra de cada palabra del parametro en 
 	return b
 
 # Transforma toda las letras en minúsculas
-def funcion3(a):		#Transforma todas las letras del parametro en mayúsculas    # MINÚSCULAS
+def Minusculas(a):		#Transforma todas las letras del parametro en mayúsculas    # MINÚSCULAS
 	a = a.lower()		
 	return a
 
 #Quita espacios en blanco innecesariosa a la izquierda que puedan traer algun problema
-def funcion4(a):		#Quita los espacios a la izquierda del parametro
+def SacaEspaciosL(a):		#Quita los espacios a la izquierda del parametro
 	a = a.lstrip()	
 	return a
 #Quita espacios en blanco innecesariosa a la derecha que puedan traer algun problema
-def funcion5(a):		#Quita los espacios a la derecha del parametro
+def DacaEspaciosR(a):		#Quita los espacios a la derecha del parametro
 	a = a.rstrip()
 	return a
 # Reemplaza letras, simbolos o números, minúsculas y mayúsculas
-def funcion6(a,b,c):	#Reemplaza todos los caracteres b del parametro a por el caracter c
+def Reemplazar(a,b,c):	#Reemplaza todos los caracteres b del parametro a por el caracter c
 	d = ""
 	for i in range(len(a)):  #Analiza letra por letra al parametro a para reconocer los caracteres b
 		if a[i] == b:			
@@ -78,7 +78,7 @@ def funcion6(a,b,c):	#Reemplaza todos los caracteres b del parametro a por el ca
 	return d
 
 #Cifrado Cesar, cambia cada letra por otra en el abecedario según una clave de cifrado específica
-def funcion7(a,b):		#Cifra el parametro a con un cifrado Cesar de desplazamiento b
+def Cifrar(a,b):		#Cifra el parametro a con un cifrado Cesar de desplazamiento b
 	abc1 = "abcdefghijklmnñopqrstuvwxyzabcdefghijklmnñopqrstuvwxyz"
 	abc2 = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 	c = ""
@@ -94,7 +94,7 @@ def funcion7(a,b):		#Cifra el parametro a con un cifrado Cesar de desplazamiento
 	return c
 
 # Proceso inverso al Cifrado Cesar, útil para descifrar codigos encriptados
-def funcion8(a,b):			#Descifra el parametro a con un cifrado Cesar de desplazamiento b
+def Descifrar(a,b):			#Descifra el parametro a con un cifrado Cesar de desplazamiento b
 	abc1 = "abcdefghijklmnñopqrstuvwxyzabcdefghijklmnñopqrstuvwxyz"
 	abc2 = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 	c = ""
